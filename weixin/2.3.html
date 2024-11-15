@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+    <table border="1px" cellpadding="1"  >
+        <caption><a href="https://www.zju.edu.cn/" target="_blank" >注册信息</a></caption>
+        <tr>
+            <th rowspan="5">基本信息</th>
+            <td>用户姓名：</td>
+            <td colspan="2"><input style="width: 97.7%;" type="text" required></td>
+        </tr>
+        <tr>
+            <td>真实姓名：</td>
+            <td colspan="2" ><input style="width: 97.7%;" type="text"required ></td>
+        </tr>
+        <tr>
+            <td>密            码：</td>
+            <td colspan="2"><input style="width: 97.7%;" type="password" required></td>
+        </tr>
+        <tr>
+            <td>确认密码：</td>
+            <td colspan="2"><input style="width: 97.7%;" type="password" required ></td>
+        </tr>
+        <tr>
+            <td>性    别：</td>
+            <td colspan="2">
+                <label><input type="radio" name="gender" value="1" required>男</label>
+                <label><input type="radio" name="gender" value="2" required>女</label>
+            </td>
+        </tr>
+        <tr><th colspan="4">通信信息</th></tr>
+        <tr>
+            <td>手机号码：</td>
+            <td><input style="width: 96.7%;" type="text" required></td>
+            <td>电子邮箱：</td>
+            <td><input style="width: 96.7%;"type="text" required></form></td>
+        </tr>
+        <tr>
+            <td>居住地址：</td>
+            <td colspan="3" ><input style="width: 98.7%;"type="text" required></td>
+        </tr>
+        <th colspan="4">额外信息</th>
+        <tr>
+            <td>爱好：</td>
+            <td colspan="3">
+                <label><input type="checkbox" name="hobby" required>篮球
+                </label>
+                <label><input type="checkbox" name="hobby" required>足球
+                </label>
+                <label><input type="checkbox" name="hobby" required>乒乓球
+                </label>               
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                头像上传:<input type="file" >
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">个人说明：<textarea cols="100%" rows="10" ></textarea>
+            </td>
+        </tr>
+    </table>
+    
+    <input type="submit">
+    <input type="reset"> 
+    </form>
+</body>
+</html>

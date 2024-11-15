@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+    <table border="1px" cellpadding="1"  >
+        <caption><a href="https://www.zju.edu.cn/" target="_blank" >注册信息</a></caption>
+        <tr>
+            <th rowspan="5">基本信息</th>
+            <td>用户姓名：</td>
+            <td colspan="2"><input style="width: 97.7%;" type="text" required ></td>
+        </tr>
+        <tr>
+            <td>真实姓名：</td>
+            <td colspan="2" ><input style="width: 97.7%;" type="text" required></td>
+        </tr>
+        <tr>
+            <td>密            码：</td>
+            <td colspan="2"><input id="p1" style="width: 97.7%;" type="password" required ></td>
+        </tr>
+        <tr>
+            <td>确认密码：</td>
+            <td colspan="2"><input id="p2" style="width: 97.7%;" type="password" required  ></td>
+        </tr>
+        <tr>
+            <td>性    别：</td>
+            <td colspan="2">
+                <label><input type="radio" name="gender" value="1" required >男</label>
+                <label><input type="radio" name="gender" value="2" required>女</label>
+            </td>
+        </tr>
+        <tr><th colspan="4">通信信息</th></tr>
+        <tr>
+            <td>手机号码：</td>
+            <td><input id="p3" style="width: 96%;" type="text" required></td>
+            <td>电子邮箱：</td>
+            <td><input id="p4" style="width: 96%;"type="text" required ></td>
+        </tr>
+        <tr>
+            <td>居住地址：</td>
+            <td colspan="3" ><input style="width: 98.7%;"type="text" required></td>
+        </tr>
+        <th colspan="4">额外信息</th>
+        <tr>
+            <td>爱好：</td>
+            <td colspan="3">
+                <label><input type="checkbox" name="hobby" >篮球
+                </label>
+                <label><input type="checkbox" name="hobby" >足球
+                </label>
+                <label><input type="checkbox" name="hobby" >乒乓球
+                </label>               
+            </td>
+        </tr>
+    </table>
+         <input type="submit" onclick="check()">
+    </form>
+    <script>
+        function check(){
+            var m=document.getElementById("p1");
+            var n=document.getElementById("p2");
+            var a=document.getElementById("p3");
+            var b=document.getElementById("p4");
+            if(m.value!=n.value){
+                alert("密码不一致");
+                alert("请重新输入");
+            }
+            else if(a.value.length!=11){
+                alert("手机号长度不正确");
+                alert("请重新输入");
+            }
+            else if(b.value.indexOf("@")==-1){
+                alert("邮箱格式不正确");
+                alert("请重新输入");
+            }
+            else{
+                alert("提交成功");
+            }
+        }
+    </script>
+</body>
+</html>

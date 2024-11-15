@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校党委书记任少波会见匈牙利国会副主席欧拉·劳约什</title>
+    <style>
+        h1 {
+            color: #4D4F53;
+            padding-left: 10px;
+            
+        }
+        
+        #time {
+            color: #968D92;
+            font-size: 13px; /* 设置字体大小 */
+            font-style: italic;
+        }
+
+        a {
+            color: black;
+            text-decoration: none; /* 设置文本为一个标准的文本 */
+        }
+
+        p {
+            text-indent: 35px; /* 设置首行缩进 */
+            line-height: 40px; /* 设置行高 */
+            padding-left: 45px;
+            padding-right: 45px;
+            font-size: larger;
+        }
+        .i1{  
+            padding-top: 20px;
+            padding-left: 130px;
+        }
+        .i2{
+            padding-left: 130px;
+        }
+
+        #plast {
+            text-align: right; /* 对齐方式 */
+            padding-right: 10px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #center {
+            width: 65%;
+            /* margin: 0% 17.5% 0% 17.5% ; */ /* 外边距, 上 右 下 左 */
+            margin: 0 auto;
+            background-color: rgb(238, 232, 232);
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="center">
+        <!-- 标题 -->
+        <img id="zju" onmouseover="stop()" onmouseout="Move()" src="https://upload.wikimedia.org/wikipedia/zh/thumb/1/16/Zhejiang_University_Logo.svg/1200px-Zhejiang_University_Logo.svg.png" style="position: absolute; height: 200px; width: 200px;"><a style="color: rgb(160, 224, 224);" href="http://www.news.zju.edu.cn/" target="_blank">求是新闻网</a>  > 正文
+ 
+        <h1>校党委书记任少波会见匈牙利国会副主席欧拉·劳约什</h1>
+
+        <hr>
+        <span id="time">2024年09月25日</span>
+        <span><a href="http://www.news.zju.edu.cn/2024/0925/c24344a2967354/page.htm" target="_blank">要闻综合</a></span>
+        <hr>
+
+        <!-- 正文 -->
+        <!-- 视频 -->
+
+        <!-- 音频 -->
+        <!-- <audio src="audio/1.mp3" controls></audio> -->
+        <img class="i1" src="http://www.news.zju.edu.cn/_upload/article/images/d1/08/6cada49d4c2084525d7a08589d48/47b8d507-906e-49c6-8dd6-d43ddc4bed26.jpg">
+        <p>
+        <strong>交流处报道</strong> 9月24日下午，浙江大学党委书记任少波在紫金港校区会见匈牙利国会副主席、匈中友好议会小组副主席欧拉·劳约什（Oláh Lajos）一行。
+
+        任少波对欧拉·劳约什一行来访表示热烈欢迎，他介绍了学校在综合实力、科研创新、全球合作、国际教育等方面的发展近况，回顾了浙江大学与匈牙利的合作情况，表示愿与匈方高校、科研院所及企业加强交流，在两国新时代全天候全面战略伙伴关系的引领下，携手推动人才培养、文化保护、科技创新和绿色发展等重点领域的务实合作。
+        </p>
+
+        <img class="i2" src="http://www.news.zju.edu.cn/_upload/article/images/d1/08/6cada49d4c2084525d7a08589d48/1ce56c03-5d2e-4dac-925b-4256e4bef527.jpg">
+
+        <p>
+            欧拉·劳约什充分肯定学校的办学经验和发展成就并积极回应双方可共同开拓的合作愿景。他表示，教育合作和文化交流是推动中匈友谊行稳致远的重要基石，愿大力支持匈方与浙江大学拓宽合作领域、密切人员往来，积极探索在新能源转型、文化遗产保护、双向人员交流等方面的合作路径，落实两国元首重要共识。浙江大学国际合作与交流处、发展联络办公室相关负责人参加会见。
+        </p>
+        <hr>
+        <p id="plast">
+            责任编辑 Xu Haojie 
+        </p>  
+    </div>
+    <img id="zju" onmouseover="stop()" onmouseout="Move()" src="https://upload.wikimedia.org/wikipedia/zh/thumb/1/16/Zhejiang_University_Logo.svg/1200px-Zhejiang_University_Logo.svg.png" style="position: absolute; height: 200px; width: 200px;">
+    <script>
+        const img = document.getElementById("zju");
+
+        const w_width= window.screen.availWidth;
+        const w_height= window.screen.availHeight;
+
+        let width=200;
+        let height=200;
+        let vx=30;
+        let vy=30;
+        function move(){
+            width=(width+vx)%(w_width-300);
+            height=(height+vy)%(w_height-300);
+
+            img.style.left=width+"px";
+            img.style.top=height+"px";
+        }
+        Id=setInterval(move, 1000);
+        function Move(){
+            Id=setInterval(move, 1000);
+        }
+        function stop(){
+            clearInterval(Id);
+        }
+       
+       
+    </script>
+</body>
+</html>

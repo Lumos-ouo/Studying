@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="zju" onmouseover="stop()" onmouseout="Move()" src="https://upload.wikimedia.org/wikipedia/zh/thumb/1/16/Zhejiang_University_Logo.svg/1200px-Zhejiang_University_Logo.svg.png" style="position: absolute; height: 200px; width: 200px;">
+    <script>
+        const img = document.getElementById("zju");
+
+        const w_width= window.screen.availWidth;
+        const w_height= window.screen.availHeight;
+
+        let width=200;
+        let height=200;
+        let vx=30;
+        let vy=30;
+        function move(){
+            width=(width+vx)%(w_width-300);
+            height=(height+vy)%(w_height-300);
+
+            img.style.left=width+"px";
+            img.style.top=height+"px";
+        }
+        Id=setInterval(move, 1000);
+        function Move(){
+            Id=setInterval(move, 1000);
+        }
+        function stop(){
+            clearInterval(Id);
+        }
+       
+       
+    </script>
+</body>
+</html>
